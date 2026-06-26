@@ -1,0 +1,7 @@
+id: sa-2026-06-26-002
+type: declaration
+summary: Root-level canonical authority files are synchronized dogfood copies
+status: accepted
+date: 2026-06-26
+author: mkovach
+context: Establishes that AGENTS.md, SPEECHACT.md, WRITING.md, CONTEXT-MODEL.md, QUALITY-SEMANTICS.md, and SEMANTIC-TRACEABILITY.md at the repository root are exact copies of their canonical/governance-seed/ counterparts. check-canonical-sync.sh enforces this. Recorded as D-0006 in DECISIONS.md.
