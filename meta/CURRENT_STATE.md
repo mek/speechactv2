@@ -10,6 +10,7 @@
 |-----------|--------|
 | `canonical/governance-seed/` — 6 authority files | Complete |
 | `canonical/governance-seed/governance/` | Complete |
+| `canonical/governance-seed/HOW-TO.md` | Complete |
 | `canonical/governance-seed/metadata/speechact-record.schema.json` | Complete |
 | `canonical/governance-seed/prompts/release.md` | Complete |
 | `canonical/governance-seed/prompts/README.md` | Complete |
@@ -18,7 +19,7 @@
 | `tools/check-speechacts.sh` | Complete |
 | `tools/check-canonical-sync.sh` | Complete |
 | `tools/package-release.sh` | Complete |
-| `examples/minimal-repo/` + speech act record | Complete |
+| `examples/minimal-repo/` + 2 speech act records | Complete |
 | `.gitlab-ci.yml` (validate + package stages) | Complete |
 | Root docs (README, ARCHITECTURE, CHANGELOG, ROADMAP, STATUS, DECISIONS) | Complete |
 | `specs/speechact-v2.md` | Draft |

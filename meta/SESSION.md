@@ -6,13 +6,13 @@
 
 ## Last Completed Work
 
-Full bootstrap session covering:
-
-- `bootstrap.md` — fleshed out all canonical authority files, governance sub-docs, tools, spec, examples, root docs
-- `bootstrap2.md` — added `check-canonical-sync.sh`, root dogfood copies of 6 canonical authority files, refined tool scripts, updated CI
-- `meta/` system — created all five memory files + `prompts/README.md`
-- Prompt system documentation — `canonical/governance-seed/prompts/README.md`, `prompts/README.md`, `ARCHITECTURE.md` prompt system section
+- `sa-2026-06-26-002.yaml` — speech act declaring dogfood sync pattern (D-0006)
+- `canonical/governance-seed/HOW-TO.md` — adoption guide for new and existing repositories
+- `prompts/README.md` — repo-specific prompt inventory and runbook
+- `canonical/governance-seed/prompts/README.md` — canonical prompt system concepts and runbook
+- `ARCHITECTURE.md` — added `prompts/` and `meta/` to directory table; added Prompt System subsection
 - `.gitignore` — excludes `dist/`, `.DS_Store`, editor files
+- `meta/KNOWN_ISSUES.md` — resolved two entries (prompts two-level, dist/ not gitignored)
 
 ## Current Status
 
@@ -22,4 +22,3 @@ All uncommitted. Repository is in a clean, committable state. All three validati
 
 1. Commit all changes
 2. Re-tag `v0.1.0-governance-seed` at HEAD (existing tag predates real content)
-3. Record `sa-2026-06-26-002.yaml` — declaration for dogfood sync pattern (D-0006)

@@ -56,14 +56,16 @@ GitLab CI runs governance validation on every push and tag. See `.gitlab-ci.yml`
 
 ## Consuming the Governance Seed
 
-To adopt SpeechAct v2 governance in another repository:
+See `canonical/governance-seed/HOW-TO.md` for step-by-step instructions covering both new repositories and existing repositories.
 
-1. Copy `canonical/governance-seed/` into your repository (e.g., as `.governance/` or inline at root).
-2. Reference canonical authority files from your project docs rather than duplicating their content.
-3. Record significant changes as speech acts in a `speechacts/` directory using the YAML format defined in `canonical/governance-seed/metadata/speechact-record.schema.json`.
+The short version:
+
+1. Copy `canonical/governance-seed/` from a tagged release into your repo (as `.governance/` or inline at root).
+2. Record a `declaration` speech act in `speechacts/` capturing the adoption decision.
+3. Reference canonical authority files from your project docs rather than duplicating their content.
 4. Optionally copy `tools/` scripts for local validation.
 
-See `examples/minimal-repo/` for a reference implementation.
+See `examples/minimal-repo/` for a minimal reference implementation.
 
 ## Repository Structure
 
@@ -88,7 +90,9 @@ speechactv2/
       drift-check.md                how to detect and correct semantic drift
     metadata/
       speechact-record.schema.json  JSON Schema for speech act records
+    HOW-TO.md                       step-by-step adoption guide
     prompts/
+      README.md                     prompt system concepts and runbook
       release.md                    AI agent prompt template for releases
 
   specs/speechact-v2.md             formal specification

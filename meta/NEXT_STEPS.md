@@ -4,13 +4,12 @@
 
 1. Commit all current changes
 2. Re-tag `v0.1.0-governance-seed` at HEAD (existing tag predates real content)
-3. Record `sa-2026-06-26-002.yaml` — `declaration` for the dogfood sync pattern (D-0006)
 
 ## Near Term (v0.1.x)
 
-4. Promote `specs/speechact-v2.md` from Draft to Accepted via speech act
-5. Add `tests/fixtures/` with valid and invalid speech act YAML samples
-6. Extend `check-speechacts.sh` with enum validation against `speechact-record.schema.json`
+3. Promote `specs/speechact-v2.md` from Draft to Accepted via speech act
+4. Add `tests/fixtures/` with valid and invalid speech act YAML samples
+5. Extend `check-speechacts.sh` with enum validation against `speechact-record.schema.json`
 
 ## Roadmap
 
