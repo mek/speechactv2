@@ -1,5 +1,48 @@
 {
-  "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "title":"SpeechActRecord",
-  "type":"object"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SpeechActRecord",
+  "description": "A speech act record capturing a meaningful repository event, intent, or commitment.",
+  "type": "object",
+  "required": ["id", "type", "summary", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^sa-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}$",
+      "description": "Unique identifier in format sa-YYYY-MM-DD-NNN"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["declaration", "assertion", "directive", "commissive", "expressive"],
+      "description": "Speech act type"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Human-readable summary of the speech act"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "accepted", "rejected", "superseded"],
+      "description": "Current status of the speech act"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date the speech act was recorded (YYYY-MM-DD)"
+    },
+    "author": {
+      "type": "string",
+      "description": "Who or what authored this speech act"
+    },
+    "supersedes": {
+      "type": "string",
+      "pattern": "^sa-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}$",
+      "description": "ID of the speech act this supersedes"
+    },
+    "context": {
+      "type": "string",
+      "description": "Rationale, background, or additional context"
+    }
+  }
 }

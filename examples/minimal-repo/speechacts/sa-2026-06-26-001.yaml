@@ -1,4 +1,7 @@
 id: sa-2026-06-26-001
 type: declaration
-summary: Establish SpeechAct v2 governance seed
+summary: Establish SpeechAct v2 governance seed as the canonical governance package
 status: accepted
+date: 2026-06-26
+author: bootstrap
+context: Initial governance establishment. Declares that canonical/governance-seed/ is the authoritative source for agent rules, speech act semantics, writing standards, context model, semantic quality rules, and traceability requirements.
