@@ -14,6 +14,7 @@ check() {
 # Root documents
 check "README.md"
 check "CHANGELOG.md"
+check "LICENSE"
 
 # Canonical authority files
 check "$CANONICAL_ROOT/AGENTS.md"

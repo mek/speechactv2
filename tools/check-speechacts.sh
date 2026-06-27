@@ -4,8 +4,8 @@ set -e
 fail=0
 found=0
 
-# Search under examples/ and metadata/records/ for speech act records
-for dir in examples metadata/records; do
+# Search under root speechacts, examples, and metadata/records for speech act records
+for dir in speechacts examples metadata/records; do
   if [ -d "$dir" ]; then
     for f in $(find "$dir" -name '*.yaml' -o -name '*.yml' 2>/dev/null); do
       found=$((found + 1))

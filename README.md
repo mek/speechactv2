@@ -67,6 +67,10 @@ The short version:
 
 See `examples/minimal-repo/` for a minimal reference implementation.
 
+## License
+
+SpeechAct v2 and the governance seed are licensed under the MIT License. See `LICENSE`.
+
 ## Repository Structure
 
 ```text

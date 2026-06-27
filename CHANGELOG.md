@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- MIT License metadata for the repository and governance seed.
+
 ## [v0.1.0-governance-seed] — 2026-06-26
 
 ### Added
